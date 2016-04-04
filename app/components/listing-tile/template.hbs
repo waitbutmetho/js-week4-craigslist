@@ -1,0 +1,6 @@
+{{yield}}
+<ul>
+{{#each category.listing as |listing|}}
+  <li>{{listing.title}} ${{listing.price}}</li> 
+{{/each}}
+</ul>
