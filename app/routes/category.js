@@ -17,6 +17,16 @@ export default Ember.Route.extend({
     },
     deleteListing3(listing){
       return listing.destroyRecord();
+    },
+    updateListing5(listing, params){
+      console.log('updateListing5');
+      Object.keys(params).forEach(function(key) {
+        if(params[key] !==undefined) {
+          listing.set(key, params[key]);
+        }
+      });
+      listing.save();
+      this.transitionTo('index');
     }
   }
 });

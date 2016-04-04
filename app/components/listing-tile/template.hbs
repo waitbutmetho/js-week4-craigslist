@@ -3,6 +3,7 @@
 {{#each category.listing as |listing|}}
   <li>{{#link-to 'listing' listing.id}}{{listing.title}} ${{listing.price}}{{/link-to}}</li>
   <button {{action 'deleteListing' listing}} type="button">Delete</button>
+  {{update-listing listing=listing updateListing2="updateListing3"}}
   <hr>
 {{/each}}
 </ul>
