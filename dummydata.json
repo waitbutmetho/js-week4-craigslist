@@ -1,0 +1,10 @@
+{ "categories": [{
+    "name": "Cars and Trucks"
+  }, {
+    "name": "Bicycles"
+  }, {
+    "name": "Lawn Mowers"
+  }, {
+    "name": "Motorcycles"
+  }]
+}
