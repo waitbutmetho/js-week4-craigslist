@@ -1,7 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-
+  sortBy: ['price:asc'],
+  sortedListings: Ember.computed.sort('category.listing', 'sortBy'),
 actions: {
   deleteListing(listing){
     if(confirm("Delete me?")) {
