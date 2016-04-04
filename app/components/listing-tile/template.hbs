@@ -1,6 +1,6 @@
 {{yield}}
 <ul>
 {{#each category.listing as |listing|}}
-  <li>{{listing.title}} ${{listing.price}}</li> 
+  <li>{{#link-to 'listing' listing.id}}{{listing.title}} ${{listing.price}}{{/link-to}}</li> 
 {{/each}}
 </ul>
