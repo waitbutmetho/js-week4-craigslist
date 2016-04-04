@@ -1,6 +1,8 @@
 {{yield}}
 <ul>
 {{#each category.listing as |listing|}}
-  <li>{{#link-to 'listing' listing.id}}{{listing.title}} ${{listing.price}}{{/link-to}}</li> 
+  <li>{{#link-to 'listing' listing.id}}{{listing.title}} ${{listing.price}}{{/link-to}}</li>
+  <button {{action 'deleteListing' listing}} type="button">Delete</button>
+  <hr>
 {{/each}}
 </ul>

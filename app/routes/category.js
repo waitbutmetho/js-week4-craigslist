@@ -14,6 +14,9 @@ export default Ember.Route.extend({
         return category.save();
       });
       this.transitionTo('category', params.category);
+    },
+    deleteListing3(listing){
+      return listing.destroyRecord();
     }
   }
 });
